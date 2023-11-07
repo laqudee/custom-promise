@@ -1,0 +1,23 @@
+{
+  "name": "custom-promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.js"
+  },
+  "scripts": {
+    "dev": "node ./src/index.js",
+    "format": "prettier --write .",
+    "test": "node ./examples/test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^3.0.3"
+  }
+}
