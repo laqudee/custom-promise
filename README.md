@@ -9,7 +9,7 @@
 ### Installation
 
 ```sh
-pnpm add custom-promise
+pnpm add @laqudee/custom-promise
 ```
 
 ### examples
@@ -30,7 +30,7 @@ pnpm add custom-promise
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "custom-promise": "^1.0.0"
+    "@laqudee/custom-promise": "^1.0.0"
   }
 }
 ```
@@ -55,7 +55,7 @@ pnpm build
 pnpm link --global
 
 # when use custom-promise
-pnpm link --global custom-promise
+pnpm link --global @laqudee/custom-promise
 
 # test
 pnpm test:es

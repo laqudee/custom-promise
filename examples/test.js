@@ -1,4 +1,4 @@
-const CustomPromise = require("custom-promise");
+const CustomPromise = require("@laqudee/custom-promise");
 
 // Resolve
 const testPromiseResolve = new CustomPromise((res, rej) => {

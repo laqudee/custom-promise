@@ -1,5 +1,5 @@
 {
-  "name": "custom-promise",
+  "name": "@laqudee/custom-promise",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
@@ -14,6 +14,9 @@
     "format": "prettier --write .",
     "test:es": "node ./examples/test.mjs",
     "test:cjs": "node ./examples/test.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [],
   "author": "",

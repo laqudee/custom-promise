@@ -1,4 +1,4 @@
-import CustomPromise from 'custom-promise'
+import CustomPromise from '@laqudee/custom-promise'
 
 // Resolve
 const testPromiseResolve = new CustomPromise((res, rej) => {
