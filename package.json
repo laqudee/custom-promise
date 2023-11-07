@@ -5,19 +5,20 @@
   "main": "index.js",
   "type": "module",
   "exports": {
-    "require": "./index.js",
-    "import": "./index.js"
+    "require": "./dist/index.js",
+    "import": "./dist/index.es.js"
   },
   "scripts": {
     "dev": "node ./src/index.js",
+    "build": "rollup -c",
     "format": "prettier --write .",
     "test": "node ./examples/test.js"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "rollup": "^4.3.0"
   }
 }
