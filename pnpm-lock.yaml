@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 devDependencies:
+  esm:
+    specifier: ^3.2.25
+    version: 3.2.25
   prettier:
     specifier: ^3.0.3
     version: 3.0.3
@@ -105,6 +108,11 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /esm@3.2.25:
+    resolution: {integrity: sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==}
+    engines: {node: '>=6'}
+    dev: true
 
   /fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}

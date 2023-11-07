@@ -1,6 +1,6 @@
 # Custom Promise
 
-> Implement a custom Promise in JavaScript
+Implement a custom Promise in JavaScript
 
 > [Reference Shubham Khatri](https://medium.com/nerd-for-tech/implement-your-own-promises-in-javascript-68ddaa6a5409)
 
@@ -61,6 +61,10 @@ pnpm link --global @laqudee/custom-promise
 pnpm test:es
 pnpm test:cjs
 ```
+
+### `pnpm dev` Instructions
+
+- `pnpm dev` will use `node` and [`esm`](https://www.npmjs.com/package/esm) execute the `src/index.js` file.
 
 ## Implement Process
 

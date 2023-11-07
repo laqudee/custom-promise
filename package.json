@@ -1,6 +1,6 @@
 {
   "name": "@laqudee/custom-promise",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -9,7 +9,7 @@
     "import": "./dist/index.mjs"
   },
   "scripts": {
-    "dev": "node ./src/index.js",
+    "dev": "node -r esm ./src/index.js",
     "build": "rollup -c",
     "format": "prettier --write .",
     "test:es": "node ./examples/test.mjs",
@@ -22,6 +22,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "esm": "^3.2.25",
     "prettier": "^3.0.3",
     "rollup": "^4.3.0"
   }
