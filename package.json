@@ -12,22 +12,23 @@
     "dev": "node -r esm ./src/index.js",
     "build": "rollup -c",
     "format": "prettier --write .",
+    "test": "promises-aplus-tests promise-a-plus-test.js",
     "test:es": "node ./examples/test.mjs",
     "test:cjs": "node ./examples/test.js"
   },
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": [], 
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "esm": "^3.2.25",
     "prettier": "^3.0.3",
+    "promises-aplus-tests": "^2.1.2",
     "rollup": "^4.3.0"
   },
   "dependencies": {
-    "@laqudee/custom-promise": "^0.0.2",
     "node-fetch": "^3.3.2"
   }
 }

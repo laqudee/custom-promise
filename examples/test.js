@@ -1,4 +1,4 @@
-const CustomPromise = require('@laqudee/custom-promise')
+const CustomPromise = require('../dist/index.js')
 
 // Resolve
 const testPromiseResolve = new CustomPromise((res, rej) => {

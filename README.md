@@ -62,6 +62,18 @@ pnpm test:es
 pnpm test:cjs
 ```
 
+### Promises/A+ Compliance Test Suite
+
+- This suite tests compliance of a promise implementation with the Promises/A+ specification.
+- [Promises/A+ CTS](https://github.com/promises-aplus/promises-tests/blob/master/README.md)
+
+```json
+"scripts": {
+  "test": "promises-aplus-tests promise-a-plus-test.js"
+}
+
+```
+
 ### `pnpm dev` Instructions
 
 - `pnpm dev` will use `node` and [`esm`](https://www.npmjs.com/package/esm) execute the `src/index.js` file.

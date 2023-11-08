@@ -1,4 +1,4 @@
-import CustomPromise from '@laqudee/custom-promise'
+import CustomPromise from '../dist/index.mjs'
 
 // Resolve
 const testPromiseResolve = new CustomPromise((res, rej) => {
