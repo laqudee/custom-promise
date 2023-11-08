@@ -64,15 +64,30 @@ pnpm test:cjs
 
 ### Promises/A+ Compliance Test Suite
 
-- This suite tests compliance of a promise implementation with the Promises/A+ specification.
-- [Promises/A+ CTS](https://github.com/promises-aplus/promises-tests/blob/master/README.md)
+This suite tests compliance of a promise implementation with the Promises/A+ specification.
 
+[Promises/A+ CTS](https://github.com/promises-aplus/promises-tests/blob/master/README.md)
+
+- add `promise-aplus-tests`
+```sh
+pnpm add promises-aplus-tests -D
+```
+
+- add script cammand
 ```json
 "scripts": {
   "test": "promises-aplus-tests promise-a-plus-test.js"
 }
-
 ```
+
+- run test
+```sh
+pnpm test
+```
+
+> This lib is temporarily uninstalled because it uses an older version of mocha that is causing some security issues. You can use this lib locally to test custom promises, but make sure it is uninstalled when you publish your own repository or npm package.
+
+- [NPM or Github complains about security issues](https://github.com/promises-aplus/promises-tests/issues/94)
 
 ### `pnpm dev` Instructions
 
