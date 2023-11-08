@@ -1,5 +1,12 @@
 import { STATE } from './enum.js'
 import { isThenable, addHandlers, executeHandlers } from './utils.js'
+import {
+  resolveMethod,
+  rejectMethod,
+  allMethod,
+  allSettledMethod,
+  raceMethod
+} from './classMethods.js'
 
 export default class CustomPromise {
   constructor(callback) {
@@ -101,4 +108,10 @@ export default class CustomPromise {
       })
     })
   }
+
+  static resolve = resolveMethod
+  static reject = rejectMethod
+  static all = allMethod
+  static race = raceMethod
+  static allSettled = allSettledMethod
 }

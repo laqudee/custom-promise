@@ -13,7 +13,8 @@
     "build": "rollup -c",
     "format": "prettier --write .",
     "test:es": "node ./examples/test.mjs",
-    "test:cjs": "node ./examples/test.js"
+    "test:cjs": "node ./examples/test.js",
+    "test:staticMethod": "node ./examples/staticMethodTest.mjs"
   },
   "publishConfig": {
     "access": "public"

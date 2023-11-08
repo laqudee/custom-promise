@@ -47,3 +47,6 @@ setTimeout(() => {
     console.log(val)
   })
 }, 3000)
+
+const staticResolve = CustomPromise.resolve("static resolve")
+staticResolve.then((val) => console.log('val: ', val))
