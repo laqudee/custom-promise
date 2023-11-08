@@ -25,5 +25,9 @@
     "esm": "^3.2.25",
     "prettier": "^3.0.3",
     "rollup": "^4.3.0"
+  },
+  "dependencies": {
+    "@laqudee/custom-promise": "^0.0.2",
+    "node-fetch": "^3.3.2"
   }
 }

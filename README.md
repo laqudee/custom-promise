@@ -20,7 +20,7 @@ pnpm add @laqudee/custom-promise
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-//   "type": "module",  // if add type: module; test:cjs can't work
+  //   "type": "module",  // if add type: module; test:cjs can't work
   "scripts": {
     "test": "node src/test.es.js",
     "test:es": "node src/test.es.mjs",
@@ -37,10 +37,10 @@ pnpm add @laqudee/custom-promise
 
 ```js
 // for cjs test.cjs.js
-const CustomPromise = require('custom-promise');
+const CustomPromise = require('custom-promise')
 
 // for es test.es.js with type: module(in package.json) or test.es.mjs
-import CustomPromise from 'custom-promise';
+import CustomPromise from 'custom-promise'
 ```
 
 ## Local Development
@@ -139,6 +139,5 @@ catch(onFail) {
 ```
 
 - `finally()` method returns a Promise which will be settled with previous fulfilled or rejected value.
-
 
 ### To be continued...

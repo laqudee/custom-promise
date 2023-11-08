@@ -1,5 +1,5 @@
 import { STATE } from './enum.js'
-import { isThenable, addHandlers } from './utils.js'
+import { isThenable, addHandlers, executeHandlers } from './utils.js'
 
 export default class CustomPromise {
   constructor(callback) {
@@ -40,7 +40,7 @@ export default class CustomPromise {
       this.state = state
 
       // Execute handlers if already attached
-      this.executeHandlers()
+      executeHandlers(this)
     }, 0)
   }
 
@@ -71,21 +71,6 @@ export default class CustomPromise {
         }
       })
     })
-  }
-
-  executeHandlers() {
-    if (this.state === STATE.PENDING) {
-      return null
-    }
-
-    this.handlers.forEach((handler) => {
-      if (this.state === STATE.FULFILLED) {
-        return handler.onSuccess(this.value)
-      }
-      return handler.onFail(this.value)
-    })
-
-    this.handlers = []
   }
 
   catch(onFail) {
