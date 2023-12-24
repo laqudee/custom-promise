@@ -5,7 +5,8 @@ import {
   rejectMethod,
   allMethod,
   allSettledMethod,
-  raceMethod
+  raceMethod,
+  anyMethod
 } from './classMethods.js'
 
 export default class CustomPromise {
@@ -114,4 +115,5 @@ export default class CustomPromise {
   static all = allMethod
   static race = raceMethod
   static allSettled = allSettledMethod
+  static any = anyMethod
 }

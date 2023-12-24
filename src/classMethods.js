@@ -1,3 +1,4 @@
+import AggregateError from 'aggregate-error'
 import { STATE } from './enum.js'
 import CustomPromise from './index.js'
 
@@ -126,5 +127,23 @@ export function allSettledMethod2(promiseList) {
 }
 
 export function anyMethod(promiseList) {
-  return 'To do...'
+  return new CustomPromise((resolve, reject) => {
+    const errors = []
+    const len = promiseList.length
+
+    promiseList.forEach((promise) => {
+      CustomPromise.resolve(promise).then(
+        (value) => {
+          resolve(value)
+        },
+        (reason) => {
+          errors.push(new Error(reason))
+          if (errors.length === len) {
+            const error = new AggregateError(errors)
+            reject(error)
+          }
+        }
+      )
+    })
+  })
 }

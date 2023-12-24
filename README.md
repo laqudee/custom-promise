@@ -69,11 +69,13 @@ This suite tests compliance of a promise implementation with the Promises/A+ spe
 [Promises/A+ CTS](https://github.com/promises-aplus/promises-tests/blob/master/README.md)
 
 - add `promise-aplus-tests`
+
 ```sh
 pnpm add promises-aplus-tests -D
 ```
 
 - add script cammand
+
 ```json
 "scripts": {
   "test": "promises-aplus-tests promise-a-plus-test.js"
@@ -81,6 +83,7 @@ pnpm add promises-aplus-tests -D
 ```
 
 - run test
+
 ```sh
 pnpm test
 ```
